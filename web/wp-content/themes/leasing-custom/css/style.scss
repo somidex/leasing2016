@@ -1,0 +1,1007 @@
+/*
+==========================
+General Styles
+==========================
+*/
+
+$heading: 'FuturaStd medium';
+$light: 'FuturaStd light';
+
+$orange: #d84927;
+$green: #3bb44a;
+$blue: #1f80c4;
+$lightblue: #00b7f0;
+
+@font-face {
+	font-family: 'FuturaStd light';
+	src: url('../fonts/FuturaStd/FuturaStd-light.eot');
+	src: url('../fonts/FuturaStd/FuturaStd-light.svg');
+	src: url('../fonts/FuturaStd/FuturaStd-light.ttf');
+	src: url('../fonts/FuturaStd/FuturaStd-light.woff');
+}
+
+@font-face {
+	font-family: 'FuturaStd medium';
+	src: url('../fonts/FuturaStd/FuturaStd-medium.eot');
+	src: url('../fonts/FuturaStd/FuturaStd-medium.svg');
+	src: url('../fonts/FuturaStd/FuturaStd-medium.ttf');
+	src: url('../fonts/FuturaStd/FuturaStd-medium.woff');
+}
+
+h1, h2 , h3, h4, a {
+	font-family: $heading;
+}
+
+p, li, span, label {
+	font-family: $light;
+}
+
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span, .pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span {
+	border-radius: 0;
+}
+
+.pagination > li > a, .pagination > li > span {
+	background-color: #cccccc;
+	color: #ffffff;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	background-color: $blue;
+}
+/*
+==========================
+Navigation
+==========================
+*/
+
+.navbar {
+	margin-bottom: 0;
+
+	.logo {
+		width: 150px;
+	}
+}
+
+.navbar-brand {
+	padding: 5px 0;
+	height: auto;
+}
+
+.desktopMenu {
+	padding-bottom: 10px;
+}
+
+.mobileMenu {
+	display: none;
+}
+
+.navbar-nav {
+	margin-top: 15px;
+}
+
+.navbar-nav > li > a {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px !important;
+}
+
+.navbar-right {
+	.dropdown-menu {
+		left: 0 !important;
+		right: auto !important;
+		border-radius: 0;
+		border: 0;
+	}
+}
+
+.dropdown-menu > li > a {
+	color: #337ab7;
+	padding: 8px 15px;
+}
+
+
+/*
+==========================
+Hero Section
+==========================
+*/
+
+.heroWrap {
+	background: url(../img/avb-view.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding: 30px 0;
+
+  	p {
+  		color: #ffffff;
+  		font-size: 18px;
+  		text-align: center;
+  	}
+
+  	.heroImg {
+  		width: 420px;
+
+  		img {
+  			margin-bottom: 30px;
+  		}
+  	}
+}
+
+.propertySearch {
+	background: #e6e7e9;
+	padding: 10px;
+
+	h2 {
+		font-size: 20px;
+		border-bottom: 1px solid #cccccc;
+		text-align: center;
+	}
+
+	label {
+		font-weight: 200;
+	}
+
+	select {
+		border-radius: 0;
+	}
+
+	button {
+		background: $orange;
+		color: #ffffff;
+		border-radius: 0;
+		margin: 10px auto;
+		float: none;
+	}
+
+	button:hover {
+		background: $orange;
+		color: #ffffff;
+	}
+}
+
+/*
+==========================
+Intro
+==========================
+*/
+
+.introText {
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 30px;
+
+	p {
+		font-size: 20px;
+		padding: 30px 50px;
+	}
+
+	a {
+		font-size: 20px;
+		background: $orange;
+		padding: 10px 30px;
+		color: #ffffff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.featProperties {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 50px;
+
+	h3 {
+		font-family: $light;
+		margin-bottom: 30px;
+	}
+
+	p {
+		font-size: 20px;
+		padding: 30px 50px;
+	}
+
+	a {
+		font-size: 20px;
+		background: $orange;
+		padding: 10px 30px;
+		color: #ffffff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.viewBtn {
+		float: left;
+		clear: both;
+		font-size: 12px;
+		padding: 10px 15px;
+		background: $green;
+	}
+}
+
+/*
+==========================
+Appointment
+==========================
+*/
+
+.setAppointment {
+	text-align: center;
+	padding-top: 50px;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	border-top: 1px solid #cccccc;
+
+	p {
+		font-size: 20px;
+	}
+
+	a {
+		font-size: 20px;
+		background: $green;
+		padding: 10px 30px;
+		color: #ffffff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+
+.hookWrap {
+	background: url(../img/hook-img.jpg) no-repeat fixed center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding-top: 50px;
+  	padding-bottom: 50px;
+  	text-align: center;
+
+  	h2 {
+  		color: #ffffff;
+  		font-size: 60px;
+  	}
+
+  	span {
+  		color: #ffffff;
+  		font-size: 20px;
+  	}
+}
+
+
+.reviewWrap {
+	background: $blue;
+	padding-top: 50px;
+  	padding-bottom: 50px;
+  	text-align: center;
+
+  	section {
+  		margin-bottom: 10px;
+  	}
+
+  	i {
+  		font-size: 16px;
+  		color: #ffffff;
+  		margin: 5px;
+  	}
+
+  	p {
+  		color: #ffffff;
+  		font-size: 18px;
+  		margin-bottom: 30px;
+  	}
+
+  	a {
+  		color: #ffffff;
+  		border: 2px solid #ffffff;
+  		padding: 10px 30px;
+  	}
+
+  	a:hover {
+  		text-decoration: none;
+  	}
+
+  	h3 {
+  		color: #ffffff;
+  		font-size: 30px;
+  	}
+
+  	span {
+  		color: #ffffff;
+  		font-size: 20px;
+  	}
+
+  	.arrow {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 2000;
+	}
+
+}
+
+.leaseWrap {
+	padding: 50px 0;
+}
+
+.commercialLease {
+	padding: 10px 50px;
+
+	section {
+		text-align: center;
+		border: 2px solid #cccccc;
+		padding: 50px 20px;
+
+		h3 {
+			margin: 0 0 10px;
+		}
+
+		p {
+			max-width: 250px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+
+		a {
+	  		color: #ffffff;
+	  		padding: 10px 30px;
+	  		background: $green;
+	  	}
+
+	  	a:hover {
+	  		text-decoration: none;
+	  	}
+	}
+}
+
+.mapWrap {
+	
+	.arrowContainer {
+		text-align: center;
+		position: relative;
+	}
+
+
+}
+#propertyMaps {
+	height: 360px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.locationLinks {
+	li {
+		display: inline-block;
+		list-style: none;
+		margin: 15px 0;
+	}
+}
+
+
+.subFooter {
+
+	h3 {
+		color: $blue;
+		margin-bottom: 20px;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	.footerBlogList {
+		h4 {
+			margin: 0 0 5px;
+		}
+		ul {
+			padding: 0;
+		}
+		li {
+			list-style: none;
+			margin-bottom: 10px;
+		}
+	}
+
+	input {
+		border-radius: 0;
+		height: 40px;
+		margin-bottom: 10px;
+	}
+
+	.subscribeBtn {
+		background: $green;
+		color: #ffffff;
+		display: block;
+		text-align: center;
+		padding: 15px;
+		font-size: 20px;
+	}
+}
+
+.carousel-inner {
+	.item {
+		img {
+			width: 100%;
+		}
+	}
+
+	h3 {
+		color: #ffffff;
+		text-align: left;
+		margin: 0 0 20px;
+	}
+
+	p {
+		color: #ffffff;
+		font-size: 16px;
+		text-align: left;
+		padding: 0;
+	}
+
+	section {
+		position: relative;
+	}
+
+	.imgDesc {
+		position: absolute;
+		width: 100%;
+		height: 233px;
+		background: rgba(0,33,87, 0.7);
+		top: 170px; 
+		padding: 20px 10px;
+		transition: top 0.5s ease;
+	}
+
+	section:hover .imgDesc {
+		top: 0;
+	}
+}
+
+.footerWrap {
+	background: $blue;
+
+	footer {
+		padding: 10px;
+		color: #ffffff;
+		text-align: center;
+	}
+}
+
+.carousel-indicators {
+	position: relative;
+	bottom: 0;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	li {
+		background-color: #ccc;
+		border: 0;
+	}
+
+	.active {
+		background-color: #1F80C4;
+	}
+}
+
+/*
+==========================
+Location Page
+==========================
+*/
+
+.locationProperties {
+	padding: 30px 0;
+
+	h1 {
+		color: $blue;
+		border-bottom: 1px solid $blue;
+		margin: 0 0 30px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	p {
+		text-align: justify;
+		margin-bottom: 30px;
+	}
+
+	.propertyList {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #cccccc;
+	}
+
+	.pagination {
+		a {
+			font-family: inherit;
+		}
+	}
+
+	.viewBtn {
+		background: $orange;
+		color: #ffffff;
+		padding: 15px 20px;
+	}
+}
+
+
+/*
+==========================
+Property Page
+==========================
+*/
+
+.propertyPage {
+	
+	h1 {
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	.unitHeader {
+		background: $blue;
+		padding: 20px;
+
+		h2 {
+			color: #ffffff;
+			text-align: center;
+			margin: 0;
+		}
+	}
+
+	.unitTypes {
+		padding: 40px;
+
+		.unitTitle {
+			padding: 10px 0;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 20px;
+		}
+
+		h4 {
+			display: inline-block;
+			margin: 0;
+			color: $blue;
+		}
+
+		.rate {
+			float: right;
+		}
+
+		section {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+	}
+	
+	ul {
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		display: block;
+		clear: both;
+		margin-bottom: 5px;
+		overflow: auto;
+
+		span {
+			font-size: 18px;
+		}
+	}
+
+	.vacant {
+		background: $green;
+		color: #fff;
+		padding: 5px 20px;
+		width: 140px;
+		display: inline-block;
+		text-align: center;
+		float: right
+	}
+
+	.occupied {
+		background: #ccc;
+		color: #fff;
+		padding: 5px 20px;
+		width: 140px;
+		display: inline-block;
+		text-align: center;
+		float: right
+	}
+
+}
+
+.amenityHead {
+	background: url(../img/hook-img.jpg) no-repeat fixed center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	padding-top: 50px;
+  	padding-bottom: 50px;
+  	text-align: center;
+
+  	h3 {
+  		color: #fff;
+  		font-size: 80px;
+  	}
+}
+
+.propertyFeatures {
+	padding-bottom: 30px;
+
+	h3 {
+		text-align: center;
+		font-size: 40px;
+		font-family: $light;
+		margin-bottom: 30px;
+	}
+
+	.features {
+
+		li {
+			display: inline-block;
+			width: 48%;
+			list-style: disc;
+			font-size: 18px;
+			padding-left: 20px;
+			margin-bottom: 10px;
+		}
+
+		li:before {
+		  content: "•  ";
+		}
+	}
+
+	.gallery {
+		
+		p {
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+}
+
+.amenities {
+	padding: 50px;
+	border-bottom: 1px solid #ccc;
+
+	p {
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+.vicinity {
+	background: $blue;
+	padding: 30px 0;
+
+	h2 {
+		color: #ffffff;
+		text-align: center;
+		font-size: 30px;
+		margin: 0;
+		font-family: $light;
+	}
+
+	h3 {
+		color: #fff;
+		font-size: 26px;
+	}
+
+	h4 {
+		color: #ffffff;
+		font-size: 22px;
+		padding-bottom: 10px;
+	}
+	
+	ul {
+		padding-left: 20px;
+	}
+
+	li {
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.arrow {
+		position: absolute;
+		top: 30px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 2000;
+	}
+
+	section {
+		border-top: 1px solid #fff;
+		padding: 30px 0;
+	}
+}
+
+#propertyLocation {
+	height: 350px;
+	width: 100%; 
+}
+
+.commentBox {
+	padding: 30px;
+
+	h3 {
+		margin-bottom: 30px;
+	}
+
+	input, textarea {
+		border-radius: 0;
+	}
+}
+
+.categoryWrap {
+	background: $lightblue;
+	padding: 30px 0;
+	text-align: center;
+
+	h3, a {
+		color: #fff;
+	}
+
+	h3 {
+		border-bottom: 1px solid #fff;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 15px;
+		border-right: 1px solid #fff;
+		margin-bottom: 10px;
+	}
+
+	li:last-of-type {
+		border: 0;
+	}
+
+	a {
+		font-size: 18px;
+		font-family: $light;
+	}
+
+}
+
+.unitIntro {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.propertySpecs {
+	label {
+		display: block;
+		font-size: 18px;
+		border-bottom: 1px dotted #ccc;
+		margin-bottom: 20px;
+
+		span {
+			color: $blue;
+			float: right;
+		}
+	}
+}
+
+.bookProperty {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	p {
+		font-size: 24px;
+		margin: 20px 0;
+		display: block;
+	}
+
+	a {
+		background: $green;
+		padding: 10px 30px;
+		color: #ffffff;
+		margin: 5px 10px 5px 0;
+		display: inline-block;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.unitFeatures {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+.calendarWrap {
+	background: #ccc;
+	position: relative;
+
+	.calendarStatus {
+		padding-top: 30px;
+		padding-bottom: 50px
+	}
+}
+
+
+#unitCalendar {
+	background: #ffffff;
+
+	h4 {
+		font-size: 26px;
+		text-transform: uppercase;
+		color: $blue;
+	}
+
+	.controls {
+		padding: 20px 0 20px;
+	}
+
+	.day-headers {
+		background: #00B7F0;
+		color: #ffffff;
+		padding: 20px 0;
+
+		.header {
+			border-bottom: 0;
+		}
+	}
+}
+
+.floorPlans {
+	img {
+		width: 100%
+	}
+}
+
+#datepicker {
+	.datePicker {
+		display: inline-block;
+	}
+
+	input {
+		height: 40px;
+		font-size: 16px;
+	}
+}
+
+.blog {
+	.blogList {
+		padding-bottom: 20px;
+		border-bottom: 1px dotted #ccc;
+		margin: 10px 0 20px;
+
+		img {
+			width: 100%;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin: 0 0 10px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.article {
+		padding-bottom: 20px;
+		border-bottom: 1px dotted #ccc;
+
+		h1 {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+		}
+
+		p {
+			font-size: 16px;
+			text-align: justify;
+		}
+		img {
+			width: 100%;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+	}
+
+	.paginationWrap {
+		text-align: center;
+	}
+
+	.pagination {
+		margin: 0 auto;
+
+		li a {
+			margin: 5px;
+		}
+	}
+
+	input, textarea {
+		border-radius: 0;
+	}
+
+	.commentBtn {
+		background: $green;
+		color: #fff;
+		padding: 10px 20px;
+	}
+
+	.blogComments {
+		display: block;
+		padding-bottom: 30px;
+	}
+}
+
+.side {
+	padding: 20px 10px;
+
+	h3 {
+		font-size: 20px;
+		padding-bottom: 5px;
+		margin: 0 0 10px;
+		border-bottom : 1px solid #ccc;
+	}
+
+	.searchBtn {
+		background: $green;
+		display: block;
+		padding: 10px;
+		color: #ffffff;
+		text-align: center;
+	}
+
+	.searchBtn:hover {
+		text-decoration: none;
+	}
+
+	input {
+		border-radius: 0;
+		margin-bottom: 10px;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		margin-bottom: 5px;
+	}
+
+	a {
+		font-size: 16px;
+	}
+
+	section {
+		padding: 20px;
+		background: #f3f3f3;
+		margin-bottom: 20px;
+	}
+}

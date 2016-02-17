@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="default" namespace="Leasing\CoreBundle\Model" defaultIdMethod="native">
+	
+	<table name="appointments" phpName="LeasingAppointments">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="appointment_leads_id" type="integer" size="11" />
+        <column name="unit_id" type="integer" size="11" />
+        <column name="preferred_date" type="varchar" size="100" />
+        <column name="preferred_time" type="varchar" size="100" />
+        <column name="confirmation_code" type="varchar" size="45" />
+        <column name="start_date" type="varchar" size="45" />
+        <column name="end_date" type="varchar" size="45" />
+        <column name="first_heard" type="varchar" size="255" />
+        <column name="notes" type="varchar" size="255" />
+        <column name="date_added" type="varchar" size="45" />
+        <column name="status" type="integer" size="11" />
+        <column name="prev_status" type="integer" size="11" />
+        <column name="processing" type="integer" size="11" />
+        <column name="processed_by" type="varchar" size="255" />
+
+        <foreign-key foreignTable="appointment_leads">
+            <reference local="appointment_leads_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="unit">
+            <reference local="unit_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="appointment_assignment" phpName="LeasingAppointmentAssignment">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="leasing_specialist_id" type="integer" size="11" />
+        <column name="appointments_id" type="integer" size="11" />
+        <column name="status" type="integer" size="11" />
+
+        <foreign-key foreignTable="leasing_specialist">
+            <reference local="leasing_specialist_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="appointments">
+            <reference local="appointments_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="appointment_leads" phpName="LeasingAppointmentLeads">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="fname" type="varchar" size="255" />
+        <column name="lname" type="varchar" size="255" />
+        <column name="email" type="varchar" size="255" />
+        <column name="mobile" type="varchar" size="45" />
+        <column name="country_id" type="integer" size="11" />
+        <column name="nationality_id" type="integer" size="11" />
+        <column name="client_ip" type="varchar" size="100" />
+        <column name="client_id" type="varchar" size="100" />
+        <column name="campaign" type="varchar" size="100" />
+        <column name="medium" type="varchar" size="100" />
+        <column name="source" type="varchar" size="100" />
+        <column name="gacountry" type="varchar" size="100" />
+
+        <foreign-key foreignTable="country">
+            <reference local="country_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="nationality">
+            <reference local="nationality_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="badges" phpName="LeasingBadges">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="status" type="varchar" size="255" />
+        <column name="status_id" type="integer" size="11" />
+        <column name="badge_class" type="varchar" size="255" />
+        <column name="badge_text" type="varchar" size="45" />
+        <column name="background_color" type="varchar" size="45" />
+        <column name="text_color" type="varchar" size="45" />
+        <column name="badge_icon" type="varchar" size="255" />
+    </table>
+
+    <table name="bookings" phpName="LeasingBookings">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="booking_leads_id" type="integer" size="11" />
+        <column name="unit_id" type="integer" size="11" />
+        <column name="check_in" type="varchar" size="100" />
+        <column name="check_out" type="varchar" size="100" />
+        <column name="confirmation_code" type="varchar" size="45" />
+        <column name="start_date" type="varchar" size="45" />
+        <column name="end_date" type="varchar" size="45" />
+        <column name="notes" type="varchar" size="255" />
+        <column name="date_added" type="varchar" size="45" />
+        <column name="status" type="integer" size="11" />
+        <column name="prev_status" type="integer" size="11" />
+        <column name="processing" type="integer" size="11" />
+        <column name="processed_by" type="varchar" size="255" />
+
+        <foreign-key foreignTable="booking_leads">
+            <reference local="booking_leads_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="unit">
+            <reference local="unit_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="booking_assignment" phpName="LeasingBookingAssignment">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="leasing_specialist_id" type="integer" size="11" />
+        <column name="bookings_id" type="integer" size="11" />
+
+        <foreign-key foreignTable="leasing_specialist">
+            <reference local="leasing_specialist_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="bookings">
+            <reference local="bookings_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="booking_leads" phpName="LeasingBookingLeads">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="fname" type="varchar" size="255" />
+        <column name="lname" type="varchar" size="255" />
+        <column name="email" type="varchar" size="255" />
+        <column name="mobile" type="varchar" size="45" />
+        <column name="country_id" type="integer" size="11" />
+        <column name="nationality_id" type="integer" size="11" />
+        <column name="client_ip" type="varchar" size="255" />
+        <column name="client_id" type="varchar" size="255" />
+        <column name="campaign" type="varchar" size="255" />
+        <column name="medium" type="varchar" size="255" />
+        <column name="source" type="varchar" size="255" />
+        <column name="gacountry" type="varchar" size="255" />
+
+        <foreign-key foreignTable="country">
+            <reference local="country_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="nationality">
+            <reference local="nationality_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="calendar" phpName="LeasingCalendar">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+        <column name="calendar_post_id" type="integer" size="11" />
+        <column name="availability" type="varchar" size="45" />
+        <column name="start_date" type="varchar" size="45" />
+        <column name="end_date" type="varchar" size="45" />
+    </table>
+
+    <table name="country" phpName="LeasingCountry">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="country_name" type="varchar" size="45" />
+    </table>
+
+    <table name="document" phpName="LeasingDocument">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="document" type="varchar" size="100" />
+    </table>
+
+    <table name="event_bookings" phpName="LeasingEventBookings">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="application_number" type="varchar" size="100" />
+        <column name="event_place_id" type="integer" size="11" />
+        <column name="event_place_specific" type="varchar" size="255" />
+        <column name="event_leads_id" type="integer" size="11" />
+        <column name="event_date" type="varchar" size="100" />
+        <column name="event_start_time" type="varchar" size="45" />
+        <column name="event_end_time" type="varchar" size="45" />
+        <column name="date_added" type="varchar" size="100" />
+        <column name="first_heard" type="varchar" size="100" />
+        <column name="status" type="integer" size="11" />
+        <column name="prev_status" type="integer" size="11" />
+        <column name="processing" type="integer" size="11" />
+        <column name="processed_by" type="varchar" size="255" />
+
+        <foreign-key foreignTable="event_place">
+            <reference local="event_place_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="event_leads">
+            <reference local="event_leads_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="event_inquiries" phpName="LeasingEventInquiries">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="event_place_id" type="integer" size="11" />
+        <column name="event_leads_id" type="integer" size="11" />
+        <column name="message" type="varchar" size="100" />
+        <column name="date_added" type="varchar" size="100" />
+        <column name="status" type="integer" size="11" />
+        <column name="prev_status" type="integer" size="11" />
+
+        <foreign-key foreignTable="event_place">
+            <reference local="event_place_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="event_leads">
+            <reference local="event_leads_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="event_leads" phpName="LeasingEventLeads">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="fname" type="varchar" size="255" />
+        <column name="lname" type="varchar" size="255" />
+        <column name="birthdate" type="varchar" size="255" />
+        <column name="age" type="integer" size="100" />
+        <column name="gender" type="varchar" size="100" />
+        <column name="email" type="varchar" size="255" />
+        <column name="mobile" type="varchar" size="45" />
+        <column name="country_id" type="integer" size="11" />
+        <column name="nationality_id" type="integer" size="11" />
+        <column name="event_lead_type" type="integer" size="11" />
+        <column name="client_ip" type="varchar" size="255" />
+        <column name="client_id" type="varchar" size="255" />
+        <column name="campaign" type="varchar" size="255" />
+        <column name="medium" type="varchar" size="255" />
+        <column name="source" type="varchar" size="255" />
+        <column name="gacountry" type="varchar" size="255" />
+
+        <foreign-key foreignTable="country">
+            <reference local="country_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="nationality">
+            <reference local="nationality_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="event_payment_details" phpName="LeasingEventPaymentDetails">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="event_bookings_id" type="integer" size="100" />
+        <column name="rental_cost" type="float" size="100" />
+        <column name="reservation_fee" type="float" size="100" />
+        <column name="security_deposit" type="float" size="100" />
+        <column name="payable" type="float" size="100" />
+        <column name="balance" type="float" size="100" />
+        <column name="status" type="integer" size="11" />
+
+        <foreign-key foreignTable="event_bookings">
+            <reference local="event_bookings_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="event_place" phpName="LeasingEventPlace">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+        <column name="post_id" type="integer" size="11" />
+        <column name="slug" type="varchar" size="255" />
+        <column name="content" type="varchar" size="255" />
+        <column name="short_address" type="varchar" size="45" />
+        <column name="full_address" type="varchar" size="255" />
+        <column name="contact" type="varchar" size="45" />
+        <column name="email" type="varchar" size="45" />
+        <column name="min" type="integer" size="100" />
+        <column name="max" type="integer" size="100" />
+        <column name="reservation_fee" type="integer" size="100" />
+        <column name="security_deposit" type="integer" size="100" />
+    </table>
+
+    <table name="features" phpName="LeasingFeatures">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+    </table>
+
+    <table name="ga_data" phpName="LeasingGaData">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="lead_type_id" type="integer" size="11" />
+        <column name="lead_id" type="integer" size="11" />
+        <column name="source" type="varchar" size="45" />
+        <column name="medium" type="varchar" size="45" />
+        <column name="campaign" type="varchar" size="45" />
+        <column name="country" type="varchar" size="45" />
+        <column name="device" type="varchar" size="45" />
+
+        <foreign-key foreignTable="lead_type">
+            <reference local="lead_type_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="lead_badges" phpName="LeasingLeadBadges">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="badge_id" type="integer" size="11" />
+        <column name="lead_type_id" type="integer" size="11" />
+        <column name="lead_id" type="integer" size="11" />
+        <column name="status" type="integer" size="11" />
+
+        <foreign-key foreignTable="badges">
+            <reference local="badge_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="lead_document" phpName="LeasingLeadDocument">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="lead_id" type="integer" size="11" />
+        <column name="document_id" type="integer" size="11" />
+        <column name="lead_type_id" type="integer" size="11" />
+
+        <foreign-key foreignTable="document">
+            <reference local="document_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="lead_type">
+            <reference local="lead_type_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="lead_type" phpName="LeasingLeadType">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+    </table>
+
+    <table name="lease_type" phpName="LeasingLeaseType">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+        <column name="display_name" type="varchar" size="255" />
+    </table>
+
+    <table name="leasing_specialist" phpName="LeasingSpecialist">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+        <column name="email" type="varchar" size="255" />
+        <column name="mobile" type="varchar" size="45" />
+        <column name="leasing_unit" type="integer" size="11" />
+        <column name="status" type="integer" size="11" />
+    </table>
+
+    <table name="leasing_specialist_schedule" phpName="LeasingSpecialistSchedule">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="leasing_specialist_id" type="integer" size="11" />
+        <column name="lead_type_id" type="integer" size="11" />
+        <column name="lead_id" type="integer" size="11" />
+        <column name="date" type="varchar" size="100" />
+        <column name="time" type="varchar" size="100" />
+        <column name="status" type="integer" size="11" />
+
+        <foreign-key foreignTable="leasing_specialist">
+            <reference local="leasing_specialist_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="location" phpName="LeasingLocation">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="location_name" type="varchar" size="45" />
+    </table>
+
+    <table name="logs" phpName="LeasingLogs">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="user" type="varchar" size="255" />
+        <column name="action" type="varchar" size="255" />
+        <column name="module" type="varchar" size="255" />
+        <column name="content" type="varchar" size="255" />
+        <column name="ip" type="varchar" size="100" />
+        <column name="datetime" type="varchar" size="100" />
+        <column name="status" type="integer" size="11" />
+    </table>
+
+    <table name="nationality" phpName="LeasingNationality">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="nationality_name" type="varchar" size="45" />
+    </table>
+
+    <table name="parking_leads" phpName="LeasingParkingLeads">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="application_number" type="varchar" size="100" />
+        <column name="salutation" type="varchar" size="45" />
+        <column name="fname" type="varchar" size="255" />
+        <column name="lname" type="varchar" size="255" />
+        <column name="gender" type="varchar" size="45" />
+        <column name="age" type="varchar" size="45" />
+        <column name="birthday" type="varchar" size="45" />
+        <column name="email" type="varchar" size="255" />
+        <column name="mobile" type="varchar" size="45" />
+        <column name="property" type="varchar" size="255" />
+        <column name="unit" type="varchar" size="100" />
+        <column name="slots" type="integer" size="11" />
+        <column name="ps_number" type="varchar" size="255" />
+        <column name="first_heard" type="varchar" size="255" />
+        <column name="payment_terms" type="varchar" size="45" />
+        <column name="payment_type" type="integer" size="11" />
+        <column name="date_added" type="varchar" size="45" />
+        <column name="date_approved" type="varchar" size="45" />
+        <column name="date_enrolled" type="varchar" size="45" />
+        <column name="date_expiry" type="varchar" size="45" />
+        <column name="date_renewal" type="varchar" size="45" />
+        <column name="status" type="integer" size="11" />
+        <column name="prev_status" type="integer" size="11" />
+        <column name="client_ip" type="varchar" size="255" />
+        <column name="client_id" type="varchar" size="255" />
+        <column name="campaign" type="varchar" size="255" />
+        <column name="medium" type="varchar" size="255" />
+        <column name="source" type="varchar" size="255" />
+        <column name="gacountry" type="varchar" size="255" />
+        <column name="processing" type="integer" size="11" />
+        <column name="processed_by" type="varchar" size="255" />
+    </table>
+
+    <table name="parking_payment_details" phpName="LeasingParkingPaymentDetails">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="parking_lead_id" type="integer" size="100" />
+        <column name="slots" type="integer" size="100" />
+        <column name="monthly_cost" type="float" size="100" />
+        <column name="period" type="integer" size="100" />
+        <column name="total_cost" type="float" size="100" />
+        <column name="status" type="integer" size="100" />
+
+        <foreign-key foreignTable="parking_leads">
+            <reference local="parking_lead_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="payment_transactions" phpName="LeasingPaymentTransactions">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="transaction_type" type="integer" size="11" />
+        <column name="transaction_date" type="varchar" size="45" />
+        <column name="transaction_code" type="varchar" size="255" />
+        <column name="transaction_cost" type="float" size="11" />
+        <column name="tax" type="float" size="11" />
+        <column name="fee" type="float" size="11" />
+        <column name="amount_paid" type="float" size="11" />
+        <column name="parking_leads_id" type="integer" size="11" />
+        <column name="event_bookings_id" type="integer" size="11" />
+        <column name="bookings_id" type="integer" size="11" />
+        <column name="processed_by" type="varchar" size="255" />
+        
+        <foreign-key foreignTable="parking_leads">
+            <reference local="parking_leads_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="event_bookings">
+            <reference local="event_bookings_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="bookings">
+            <reference local="bookings_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="payment_validity" phpName="LeasingPaymentValidity">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="lead_type_id" type="integer" size="100" />
+        <column name="lead_id" type="integer" size="100" />
+        <column name="period" type="integer" size="100" />
+        <column name="transaction_id" type="integer" size="100" />
+        <column name="balance" type="float" size="100" />
+        <column name="status" type="integer" size="11" />
+
+        <foreign-key foreignTable="payment_transactions">
+            <reference local="transaction_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="price_range" phpName="LeasingPriceRange">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="price_range" type="varchar" size="45" />
+        <column name="status" type="integer" size="11" />
+        <column name="start_date" type="varchar" size="45" />
+        <column name="end_date" type="varchar" size="45" />
+        <column name="unit_id" type="integer" size="11" />
+        
+        <foreign-key foreignTable="unit">
+            <reference local="unit_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="projects" phpName="LeasingProjects">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="project" type="varchar" size="255" />
+        <column name="code" type="varchar" size="20" />
+    </table>
+
+    <table name="residential_account_type" phpName="LeasingAccountType">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="account_type" type="varchar" size="255" />
+    </table>
+
+    <table name="status" phpName="LeasingStatus">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="status" type="varchar" size="45" />
+        <column name="lead_type_id" type="integer" size="11" />
+    </table>
+
+    <table name="tenants" phpName="LeasingTenants">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="account_type" type="integer" size="11" />
+        <column name="building" type="varchar" size="255" />
+        <column name="unit_id" type="integer" size="11" />
+        <column name="ps_number" type="varchar" size="100" />
+        <column name="unit_owner_id" type="integer" size="11" />
+        <column name="tenant_name" type="varchar" size="255" />
+        <column name="contact" type="varchar" size="255" />
+        <column name="email" type="varchar" size="255" />
+        <column name="lease_start_date" type="varchar" size="255" />
+        <column name="lease_end_date" type="varchar" size="255" />
+        <column name="status" type="integer" size="11" />
+        <column name="prev_status" type="integer" size="11" />
+
+        <foreign-key foreignTable="residential_account_type">
+            <reference local="account_type" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="unit">
+            <reference local="unit_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="unit_owner">
+            <reference local="unit_owner_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="timeline_activity" phpName="LeasingTimelineActivity">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="lead_type_id" type="integer" size="11" />
+        <column name="lead_id" type="integer" size="11" />
+        <column name="user" type="varchar" size="45" />
+        <column name="activity" type="varchar" size="45" />
+        <column name="timestamp" type="varchar" size="45" />
+        <column name="notes" type="varchar" size="45" />
+        <column name="status" type="varchar" size="45" />
+        <column name="status_id" type="integer" size="11" />
+        
+        <foreign-key foreignTable="lead_type">
+            <reference local="lead_type_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="status">
+            <reference local="status_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="unit" phpName="LeasingUnit">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+        <column name="post_id" type="integer" size="11" />
+        <column name="slug" type="varchar" size="255" />
+        <column name="content" type="varchar" size="255" />
+        <column name="availability" type="integer" size="11" />
+        <column name="price_range" type="varchar" size="45" />
+        <column name="status" type="integer" size="11" />
+        <column name="unit_type_id" type="integer" size="11" />
+        <column name="location_id" type="integer" size="11" />
+        <column name="lease_type_id" type="integer" size="11" />
+        <column name="project_id" type="integer" size="11" />
+        <column name="br_id" type="integer" size="11" />
+        <column name="dress_up_id" type="integer" size="11" />
+        
+        <foreign-key foreignTable="unit_type">
+            <reference local="unit_type_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="location">
+            <reference local="location_id" foreign="id" />
+        </foreign-key>
+        
+        <foreign-key foreignTable="lease_type">
+            <reference local="lease_type_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="projects">
+            <reference local="project_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="unit_dress_up">
+            <reference local="dress_up_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="unit_no_br">
+            <reference local="br_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="unit_calendar" phpName="LeasingUnitCalendar">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="calendar_id" type="integer" size="11" />
+        <column name="unit_id" type="integer" size="11" />
+        <column name="status" type="integer" size="11" />
+
+        <foreign-key foreignTable="calendar">
+            <reference local="calendar_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="unit">
+            <reference local="unit_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="unit_dress_up" phpName="LeasingUnitDressUp">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="dress_up" type="varchar" size="255" />
+    </table>
+
+    <table name="unit_features" phpName="LeasingUnitFeatures">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="status" type="integer" size="11" />
+        <column name="unit_id" type="integer" size="11" />
+        <column name="features_id" type="integer" size="11" />
+        
+        <foreign-key foreignTable="unit">
+            <reference local="unit_id" foreign="id" />
+        </foreign-key>
+
+        <foreign-key foreignTable="features">
+            <reference local="features_id" foreign="id" />
+        </foreign-key>
+    </table>
+
+    <table name="unit_no_br" phpName="LeasingUnitNumberBedrooms">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="bedrooms" type="varchar" size="255" />
+        <column name="br_code" type="varchar" size="20" />
+    </table>
+
+    <table name="unit_owner" phpName="LeasingUnitOwner">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="255" />
+        <column name="contact" type="varchar" size="255" />
+        <column name="email" type="varchar" size="255" />
+        <column name="representative" type="varchar" size="255" />
+        <column name="rep_contact" type="varchar" size="255" />
+        <column name="status" type="integer" size="11" />
+    </table>
+
+    <table name="unit_type" phpName="LeasingUnitType">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="type_name" type="varchar" size="45" />
+    </table>
+
+</database>
