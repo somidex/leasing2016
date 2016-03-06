@@ -1,0 +1,3 @@
+leasing_sms_homepage:
+    path:     /
+    defaults: { _controller: LeasingSmsBundle:Default:index }

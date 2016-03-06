@@ -1,0 +1,1163 @@
+@font-face {
+  font-family: 'FuturaStd light';
+  src: url("fonts/FuturaStd/FuturaStd-light.eot");
+  src: url("fonts/FuturaStd/FuturaStd-light.svg");
+  src: url("fonts/FuturaStd/FuturaStd-light.ttf");
+  src: url("fonts/FuturaStd/FuturaStd-light.woff"); }
+@font-face {
+  font-family: 'FuturaStd medium';
+  src: url("fonts/FuturaStd/FuturaStd-medium.eot");
+  src: url("fonts/FuturaStd/FuturaStd-medium.svg");
+  src: url("fonts/FuturaStd/FuturaStd-medium.ttf");
+  src: url("fonts/FuturaStd/FuturaStd-medium.woff"); }
+
+.credsLogin #submitCredentials {
+	margin-top: 10px; }
+
+.credsLogin h2 {
+	margin-bottom: 40px; }
+
+#pdText4 {
+	font-family: 'FuturaStd medium';
+	font-weight: bold; }
+
+#payNow {
+	float: none;
+	max-width: 200px;
+	display: block;
+	margin: 0 auto; }
+
+#refNumText {
+	font-family: 'FuturaStd medium';
+	font-weight: bold;
+	color: #EC2B2B;
+	display: inline-block;
+	float: right; }
+
+#reqStatusText {
+	font-family: 'FuturaStd medium';
+	font-weight: bold;
+	color: #EC2B2B;
+	display: inline-block;
+	float: right; }
+
+#appDetails {
+	margin-top: 30px;
+	font-size: 16px; }
+
+#paymentDetails {
+	font-size: 16px; }
+
+#appDetails p span, #paymentDetails p span {
+	display: inline-block;
+	float: right; }
+
+#eventBookings {
+	display: none; }
+
+.eventCtaBtns {
+	text-align: center; }
+
+#breadcrumbs span {
+	display: inline;
+	font-size: 14px; }
+
+.blog .blogList h2 {
+	margin: 0px 0px 5px; }
+
+.col-md-8 #articleMeta {
+	margin-bottom: 15px; }
+
+.blog .article h1 {
+	margin-bottom: 10px; }
+
+#articleMeta {
+	margin-bottom: 10px; }
+
+.bookProperty .reserveBtn {
+	float: right; }
+
+#reserveUnitBook {
+	float: none; }
+
+.vicinity .col-md-12 strong {
+	font-family: "FuturaStd light";
+	color: #FFF;
+	font-size: 21px;
+	margin-bottom: 10px; }
+
+.vicinity .col-md-12 {
+	font-family: "FuturaStd light";
+	color: #FFF;
+	font-size: 18px;
+	margin-bottom: 10px; }
+
+.amenities, .propertyFeatures .col-md-12 {
+	font-family: "FuturaStd light";
+	font-size: 18px;
+	margin-bottom: 10px; }
+
+.propertyFeatures .col-md-12 ul {
+	margin-top: 30px; }
+
+.amenities .col-md-4 {
+	font-family: "FuturaStd light";
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-top: 30px; }
+
+#spaceLoc h2 {
+	text-transform: uppercase; }
+
+.subFooter .col-md-6 img {
+	max-width: 100%; }
+
+/* PRELOADER */
+
+#shortTermLease #floatingBarsG{
+	position:absolute;
+	width:70px;
+	height:87px;
+	bottom: 210px;
+	left: 250px;
+	z-index: 10000;
+	display: none; }
+
+#longTermLease #floatingBarsG {
+	position:absolute;
+	width:70px;
+	height:87px;
+	bottom: 310px;
+	left: 400px;
+	z-index: 10000;
+	display: none; }
+
+.blockG{
+position:absolute;
+background-color:#FFFFFF;
+width:11px;
+height:27px;
+-moz-border-radius:10px 10px 0 0;
+-moz-transform:scale(0.4);
+-moz-animation-name:fadeG;
+-moz-animation-duration:1.04s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:normal;
+-webkit-border-radius:10px 10px 0 0;
+-webkit-transform:scale(0.4);
+-webkit-animation-name:fadeG;
+-webkit-animation-duration:1.04s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:normal;
+-ms-border-radius:10px 10px 0 0;
+-ms-transform:scale(0.4);
+-ms-animation-name:fadeG;
+-ms-animation-duration:1.04s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:normal;
+-o-border-radius:10px 10px 0 0;
+-o-transform:scale(0.4);
+-o-animation-name:fadeG;
+-o-animation-duration:1.04s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:normal;
+border-radius:10px 10px 0 0;
+transform:scale(0.4);
+animation-name:fadeG;
+animation-duration:1.04s;
+animation-iteration-count:infinite;
+animation-direction:normal;
+}
+
+#rotateG_01{
+left:0;
+top:32px;
+-moz-animation-delay:0.39s;
+-moz-transform:rotate(-90deg);
+-webkit-animation-delay:0.39s;
+-webkit-transform:rotate(-90deg);
+-ms-animation-delay:0.39s;
+-ms-transform:rotate(-90deg);
+-o-animation-delay:0.39s;
+-o-transform:rotate(-90deg);
+animation-delay:0.39s;
+transform:rotate(-90deg);
+}
+
+#rotateG_02{
+left:9px;
+top:11px;
+-moz-animation-delay:0.52s;
+-moz-transform:rotate(-45deg);
+-webkit-animation-delay:0.52s;
+-webkit-transform:rotate(-45deg);
+-ms-animation-delay:0.52s;
+-ms-transform:rotate(-45deg);
+-o-animation-delay:0.52s;
+-o-transform:rotate(-45deg);
+animation-delay:0.52s;
+transform:rotate(-45deg);
+}
+
+#rotateG_03{
+left:29px;
+top:3px;
+-moz-animation-delay:0.65s;
+-moz-transform:rotate(0deg);
+-webkit-animation-delay:0.65s;
+-webkit-transform:rotate(0deg);
+-ms-animation-delay:0.65s;
+-ms-transform:rotate(0deg);
+-o-animation-delay:0.65s;
+-o-transform:rotate(0deg);
+animation-delay:0.65s;
+transform:rotate(0deg);
+}
+
+#rotateG_04{
+right:9px;
+top:11px;
+-moz-animation-delay:0.78s;
+-moz-transform:rotate(45deg);
+-webkit-animation-delay:0.78s;
+-webkit-transform:rotate(45deg);
+-ms-animation-delay:0.78s;
+-ms-transform:rotate(45deg);
+-o-animation-delay:0.78s;
+-o-transform:rotate(45deg);
+animation-delay:0.78s;
+transform:rotate(45deg);
+}
+
+#rotateG_05{
+right:0;
+top:32px;
+-moz-animation-delay:0.9099999999999999s;
+-moz-transform:rotate(90deg);
+-webkit-animation-delay:0.9099999999999999s;
+-webkit-transform:rotate(90deg);
+-ms-animation-delay:0.9099999999999999s;
+-ms-transform:rotate(90deg);
+-o-animation-delay:0.9099999999999999s;
+-o-transform:rotate(90deg);
+animation-delay:0.9099999999999999s;
+transform:rotate(90deg);
+}
+
+#rotateG_06{
+right:9px;
+bottom:8px;
+-moz-animation-delay:1.04s;
+-moz-transform:rotate(135deg);
+-webkit-animation-delay:1.04s;
+-webkit-transform:rotate(135deg);
+-ms-animation-delay:1.04s;
+-ms-transform:rotate(135deg);
+-o-animation-delay:1.04s;
+-o-transform:rotate(135deg);
+animation-delay:1.04s;
+transform:rotate(135deg);
+}
+
+#rotateG_07{
+bottom:0;
+left:29px;
+-moz-animation-delay:1.1700000000000002s;
+-moz-transform:rotate(180deg);
+-webkit-animation-delay:1.1700000000000002s;
+-webkit-transform:rotate(180deg);
+-ms-animation-delay:1.1700000000000002s;
+-ms-transform:rotate(180deg);
+-o-animation-delay:1.1700000000000002s;
+-o-transform:rotate(180deg);
+animation-delay:1.1700000000000002s;
+transform:rotate(180deg);
+}
+
+#rotateG_08{
+left:9px;
+bottom:8px;
+-moz-animation-delay:1.3s;
+-moz-transform:rotate(-135deg);
+-webkit-animation-delay:1.3s;
+-webkit-transform:rotate(-135deg);
+-ms-animation-delay:1.3s;
+-ms-transform:rotate(-135deg);
+-o-animation-delay:1.3s;
+-o-transform:rotate(-135deg);
+animation-delay:1.3s;
+transform:rotate(-135deg);
+}
+
+@-moz-keyframes fadeG{
+0%{
+background-color:#1F80C4}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-webkit-keyframes fadeG{
+0%{
+	background-color:#1F80C4}
+
+	100%{
+	background-color:#FFFFFF}
+
+}
+
+@-ms-keyframes fadeG{
+0%{
+	background-color:#1F80C4}
+
+	100%{
+	background-color:#FFFFFF}
+
+}
+
+@-o-keyframes fadeG{
+0%{
+	background-color:#1F80C4}
+
+	100%{
+	background-color:#FFFFFF}
+}
+
+@keyframes fadeG{
+0%{
+	background-color:#1F80C4}
+
+	100%{
+	background-color:#FFFFFF}
+}
+
+/* NAVIGATION MENU */
+
+.caret {
+	display: none; }
+
+.dropdown:hover {
+	background-color: #EEE;
+	border-color: #337AB7; }
+
+.dropdown:hover #levelOne {
+	display: block; }
+
+.dropdown-submenu {
+	position: relative; }
+
+.dropdown-submenu:hover #levelTwo {
+	display: block;
+	top: -2px;
+	left: 160px !important; }
+
+.mobileMenu {
+    display: none; }
+
+.featProperties .viewBtn {
+	color: #FFFFFF; }
+
+.carousel-inner .imgDesc {
+	padding: 15px 10px; }
+
+.vicinity p {
+	color: #FFF; }
+
+.vicinity h3 {
+	margin-bottom: 30px; }
+
+.vicinity ul:first-of-type {
+	margin-bottom: 40px; }
+
+.amenityHead {
+    background: transparent url("../img/amenities.jpg") no-repeat fixed center center / cover;
+    padding-top: 100px;
+	padding-bottom: 100px; }
+
+.heroWrap {
+	padding: 65px 0px; }
+
+.propertyPage .col-md-6 p {
+	margin-bottom: 5px; }
+
+.propertyPage .col-md-6 ul {
+	margin-bottom: 30px; }
+
+table {
+	text-align: center;
+	padding: 10px;
+	font-size: 14px;
+	margin-bottom: 35px;
+	margin-top: 35px;
+	font-family: "FuturaStd light";
+	width: 100%; }
+
+.propertyPage table th {
+	text-align: center !important;
+	padding: 10px; }
+
+.page-numbers {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	margin: 20px 0px; }
+
+.pagination nav ul {
+	display: block !important; }
+
+.page-numbers > li, .page-numbers span.current, a.page-numbers {
+    display: inline-block !important;
+    width: auto; }
+
+span.page-numbers, a.page-numbers {
+    padding: 10px 16px;
+	font-size: 18px; }
+
+a.page-numbers {
+    font-size: 18px;
+    background-color: #3F67C0;
+	color: #FFF; }
+
+.pagination {
+	display: block;
+	width: 100%;
+	text-align: center; }
+
+#priceInSearch {
+	display: block;
+	margin-bottom: 20px;
+	color: #DB910F;
+	font-size: 16px;
+	margin-top: -5px;
+	font-weight: bold; }
+	
+/* Set Appointment */
+
+.setAppointment a {
+	display: block;
+	max-width: 300px;
+	margin: 20px auto; }
+
+.commercialLease section a {
+	display: block;
+	max-width: 300px;
+	margin: 0px auto; }
+
+.properties h1 {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 60px;
+	padding: 30px 0px 30px;
+	text-transform: uppercase; }
+
+.propertyLogoAndContent {
+	margin-bottom: 20px; }
+
+.propertyPage p {
+    font-size: 18px;
+    margin-bottom: 25px;
+	margin-top: 25px; }
+
+.propertyPage ul {
+	padding-left: 15px; }
+
+.propertyPage li {
+    display: block;
+    clear: both;
+    margin-bottom: 13px;
+    overflow: auto;
+    font-size: 16px;
+    list-style: outside none none; }
+
+.propertyPage li span {
+	display: inline; }
+
+/* Locations */
+
+.propertyList h3, .propertyList h1, .locationLinks li a, .contactUs h1, .propertyPage h1 {
+	text-transform: uppercase; }
+
+/* Articles */
+
+.searchBtn {
+	border: none;
+	width: 100%;
+	font-size: 16px; }
+
+/* Newsletter Form */
+.subFooter .subscribeBtn {
+	border: none;
+	padding: 8px 15px;
+	width: 100%; }
+
+.wpcf7-form p {
+	position: relative; }
+
+.ajax-loader {
+	display: block;
+	float: right;
+	margin-right: -120px;
+	padding: 12px 50px; }
+
+.wpcf7-response-output {
+	margin: 0px;
+	font-family: "FuturaStd light"; }
+
+/* Contact Us */
+#ContactUsForm {
+	margin-top: 20px; }
+
+#ContactUsForm span.wpcf7-form-control-wrap {
+	display: block;
+	margin-bottom: 10px; }
+
+.vicinity .col-md-12 p strong {
+	color: #FFF;
+	font-size: 18px;
+	margin-bottom: 10px; }
+
+.col-md-12 p {
+	font-size: 18px; }
+
+footer p {
+	font-size: 14px;
+	margin-bottom: 4px; }
+
+.footerWrap footer {
+	padding: 10px 10px 5px; }
+
+.propertySpecs label {
+	margin-bottom: 25px; }
+
+.responsive-calendar .days {
+	background: #dbdbdb; }
+.responsive-calendar .day.not-current a {
+	color: #000; }
+.responsive-calendar .day.active a {
+	background-color: #FFF;
+	color: #000; }
+
+#datepicker .datePicker {
+	margin-bottom: 13px; }
+
+#errorNotif {
+	display: block;
+	margin-bottom: 10px;
+	color: #FF0000; }
+
+.inputHalf {
+	margin-bottom: 10px; }
+
+#formNotif, #success, #error {
+	display: none; }
+
+#success {
+	color: #398339;
+	font-weight: bold; }
+
+#error {
+	color: #FF0000;
+	font-weight: bold; }
+
+#changeDates {
+	background: none repeat scroll 0% 0% #565656;
+	padding: 10px 30px;
+	color: #FFF;
+	margin: 5px 10px 5px 0px;
+	display: inline-block; }
+
+.booked a {
+	background-color: #1F80C4 !important;
+	color: #FFF !important;
+}
+
+.full a {
+	background: #1C2F3F !important;
+	color: #FFF !important;
+}
+
+#booked {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: #1F80C4; }
+
+#full {
+	background: #1C2F3F none repeat scroll 0% 0% !important;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-left: 20px; }
+
+.mobDesc {
+	visibility: hidden;
+	display: none; }
+
+.heroWrap {
+	position: relative; }
+
+.heroWrap .overlay {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%; }
+
+.amenities ul {
+	font-size: 16px;
+	line-height: 29px; }
+
+#spaceLoc p {
+	margin-top: 5px !important; }
+
+#spaceLoc span {
+	font-size: 16px; }
+
+.propertyPage .pdfLink {
+	margin: 20px 0px 20px 0px; }
+
+.eventsGallery .carousel-inner .item img, .ratesInfo img {
+	margin-bottom: 20px; }
+
+.commentBox {
+    padding: 10px 15px; }
+
+.commentBox h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 34px; }
+
+.blog h1 {
+	margin-bottom: 40px; }
+
+.propertySpecs label select {
+	color: #1F80C4;
+	margin-bottom: 10px;
+	font-size: 20px;
+	height: 35px;
+	padding: 0px 12px; }
+
+#time {
+	font-family: "FuturaStd light";
+	font-size: 14px; }
+
+#selectNotif {
+	display: block;
+	padding: 30px 40px;
+	text-align: center; }
+
+#selectNotif h3 {
+	line-height: 37px; }
+
+/*#selectedALease, #shortTermHeading, #longTermHeading, #shortTermText, #longTermText, #shortTermDatePick, #longTermDatePick, #shortTermBookings, #longTermAppointments, #reserveUnitBook, #reserveUnitAppoint, #setNewBooking, #setNewAppoint {
+	display: none; }*/
+
+#shortTermLease {
+	display: none; }
+
+.responsive-calendar .day.header {
+	border-bottom: 0px none; }
+
+.commercial .col-md-6 img {
+	margin-top: 35px; }
+
+.commercial .col-md-6 p {
+	margin-bottom: 25px; }
+
+#copyright {
+	font-size: 12px; }
+
+.commentBox h3, .bookProperty h3  {
+	font-size: 26px; }
+
+.bookProperty p {
+    font-size: 20px; }
+
+.badge-warning {
+	background-color: #ECA81F; }
+
+#searchList {
+	padding-bottom: 40px;
+	margin: 40px 0px 40px;
+}
+
+#searchList .viewBtn {
+	background: #D84927 none repeat scroll 0% 0%;
+	color: #FFF;
+	padding: 9px 20px;
+	margin-top: 6px;
+	display: inline-block; }
+
+.floatingIcon {
+	position: fixed;
+	bottom: 50px;
+	z-index: 1000;
+	right: 10px;
+	cursor: pointer;
+	display: none; }
+
+#menu-main-menu li:first-of-type {
+	display: none; }
+
+#levelOne li:first-of-type {
+	display: block; }
+
+.responsive-calendar {
+	margin-bottom: 5px; }
+
+#menu-main-menu li a i {
+	display: none; }
+
+.imageContainer {
+	width: 350px;
+	height: 235px;
+	cursor: pointer; }
+
+.modal-dialog {
+    width: 60%;
+    margin: 100px auto; }
+
+.modal-img {
+	display: block;
+	max-width: 100%;
+	width: 100%; }
+
+.commercial .gallery h2 {
+	text-align: center; }
+
+#stNote {
+	font-weight: normal;
+	font-size: 14px;
+	margin-bottom: 6px;
+	margin-top: 30px; }
+
+#processCarousel {
+	margin-top: 35px; }
+
+#processCarousel .item {
+	text-align: center; }
+
+#processCarousel .item span {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 21px;
+	font-weight: bold; }
+
+#processCarousel .item img {
+	max-width: 100%;
+	width: auto;
+	display: block;
+	margin: 0px auto; }
+
+#processCarousel .item p {
+	color: #333333; }
+
+.propertyFeatures .pdfLink {
+	margin: 20px 5px 20px 0px;
+	background: #3BB44A none repeat scroll 0% 0%;
+	padding: 10px 20px;
+	color: #FFF; }
+
+#leaseDLlinks {
+	text-align: center;
+	margin-top: 35px; }
+
+.memberPhoto {
+	margin-top: 40px; }
+
+.memberPhoto img {
+	max-width: 100%;
+	border-radius: 50%;
+	display: block;
+	margin: 0px auto 20px; }
+
+.memberPhoto span {
+	display: block;
+	text-align: center; }
+
+.memberPhoto .name {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase; }
+
+#tabPanel li {
+	display: inline-block;
+	float: none; }
+
+#tabPanel > li > a {
+	padding: 10px; }
+
+.blog .article p {
+	line-height: 25px;
+	margin-bottom: 25px; }
+
+figure {
+	margin: 0px auto 35px;
+	text-align: center; }
+
+.blog .article img {
+	margin-bottom: 10px;
+	margin-top: 20px; }
+
+figcaption {
+	font-family: "FuturaStd light"; }
+
+#featured {
+	max-width: 360px;
+	width: 100%;
+	height: 230px; }
+
+.subFooter .footerBlogList h4 {
+    margin: 0px 0px 15px;
+    line-height: 25px; }
+
+.nav-links .meta-nav {
+	background: #337AB7 none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+	padding: 10px 20px;
+	font-size: 18px; }
+
+.nav-links a[rel~=next] {
+	display: inline-block;
+	float: right; }
+
+#eventInquiries, #eventBookings {
+	background: #FFFFFF; }
+
+.eventComment .propSearch, .eventComment #propertySearch {
+	padding: 20px 15px; }
+
+.eventComment #propertySearch #submitSearch {
+	float: right;
+	background: #3BB44A none repeat scroll 0% 0%;
+	color: #FFF;
+	border: none;
+	border-radius: 0px;
+	padding: 10px 20px; }
+
+.searchPage .propertySearch {
+	margin-top: 30px;
+	margin-bottom: 30px; }
+
+#hideOnMobile a {
+	font-size: 20px;
+	background: #D84927 none repeat scroll 0% 0%;
+	padding: 10px 30px;
+	color: #FFF;
+	display: inline-block;
+	margin: 20px auto 0px;
+	max-width: 200px;
+	text-align: center; }
+
+#brCondoSub, #featCondoSub {
+	display: none; }
+
+#propertySearch {
+	overflow: hidden; }
+
+.propertySearch button {
+	float: right; }
+
+#submit {
+	font-size: 18px;
+	padding: 5px 30px;
+	float: right; }
+
+div.wpcf7-validation-errors {
+	float: left; }
+
+.form-group {
+	overflow: hidden; }
+
+#contactSubmit {
+	float: right;
+	font-size: 18px;
+	padding: 5px 30px; }
+
+.kv-fileinput-caption {
+	height: 34px; }
+
+@media (max-width: 1369px) {
+	.container {
+		max-width: 1120px; }
+
+	.heroWrap .heroImg img {
+		max-width: 320px;
+		width: 100%;
+		margin: 0px auto 30px;
+		display: block; }
+
+	.heroWrap p {
+		font-size: 16px; }
+
+	.propertySearch h2 {
+    	font-size: 18px;
+    	margin-top: 10px; }
+
+    .propertySearch label {
+    	font-size: 13px; }
+
+    .form-control {
+    	height: 30px;
+		padding: 0px 12px; }
+
+	.kv-fileinput-caption {
+		height: 34px; }
+
+	.heroWrap {
+    	padding: 35px 0px; }
+}
+
+@media (max-width: 768px) {
+	.desktopMenu {
+		display: none; }
+
+	.mobileMenu, .navbar-toggle {
+		display: block; }
+
+	.navbar-toggle {
+		margin-top: 18px; }
+
+	.navbar-default {
+	    background-color: #FFFFFF;
+	    border-color: #FFFFFF; }
+
+	.heroWrap .heroImg {
+		display: block;
+		margin: 0 auto; }
+
+	.navmenu-default .navmenu-nav > li > a, .navbar-default .navbar-offcanvas .navmenu-nav > li > a {
+		color: #FFFFFF;
+		font-weight: normal;
+		font-size: 16px; }
+
+	.navmenu-default .navmenu-nav > li > a:hover, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:hover, .navmenu-default .navmenu-nav > li > a:focus, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:focus {
+		color: #FFFFFF; }
+
+	.offcanvas {
+		padding: 20px 10px; }
+
+	.offcanvas img {
+		max-width: 100%; }
+
+	.navmenu-nav {
+		margin-top: 30px; }
+
+	.dropdown:hover, .dropdown:focus {
+	    background-color: transparent;
+	    border-color: none; }
+
+	.dropdown-submenu:hover #levelTwo {
+		display: none; } 
+
+	.propertyPage img {
+		max-width: 300px;
+		display: block;
+		margin: 0 auto; }
+
+	.locationProperties {
+		padding: 30px 20px; }
+
+	.subFooter .col-md-8 {
+		float: left;
+		width: 66.6667%; }
+
+	.subFooter .col-md-4 {
+		float: left;
+		width: 33.3333%; }
+
+	.imgDesc {
+		display: none; }
+
+	.mobDesc {
+		visibility: visible;
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		background: rgba(0, 33, 87, 0.7) none repeat scroll 0% 0%;
+		width: 100%;
+		padding: 12px 10px; }
+
+	.carousel-inner h3 {
+	    color: #FFF;
+	    text-align: left;
+	    margin: 0px 0px 12px;
+	    font-size: 25px; }
+
+	.carousel-inner .col-md-3 {
+		float: left;
+		width: 50%;
+		margin-bottom: 30px; }
+
+	.mobileMenu {
+		padding: 10px 15px; }
+
+	.propertyPage .pdfLink {
+		display: block; }
+
+	.blog .blogList h2 {
+		margin: 20px 0px 10px; }
+
+	.properties h1 {
+    	font-size: 40px;
+    	line-height: 55px; }
+
+    .propertyPage .unitTypes {
+    	padding: 40px 15px; }
+
+    .calendarWrap .calendarStatus {
+    	padding-bottom: 0px; }
+
+    .dropdown:hover #levelOne {
+		position: relative;
+		width: 100%;
+		border-radius: 0px;
+		background: rgb(68, 81, 90) none repeat scroll 0% 0%;
+		margin-bottom: 20px;
+		border: medium none; }
+
+    #menu-main-menu-1 li a i {
+    	display: inline-block; }
+
+    #menu-main-menu-1 li a {
+		font-family: "FuturaStd light";
+		padding: 10px 0px; }
+
+	#levelOne li a {
+		padding: 10px;
+		color: #FFF;
+		border-bottom: 1px dotted; }
+
+	#levelOne li a:hover {
+		background-color: #F5F5F5;
+		color: #333; }
+
+	#levelOne li:last-child a {
+		border-bottom: none; }
+
+	#menu-main-menu-1 li a i {
+		margin-right: 10px; }
+
+	.imageContainer {
+		width: 410px;
+		height: 265px;
+		margin: 0px auto; }
+
+	.modal-dialog {
+	    width: 90%;
+	    margin: 100px auto; }
+
+	.amenities {
+		overflow: hidden; }
+
+	.amenities .col-md-6 {
+		display: inline;
+		width: 50%;
+		float: left; }
+
+	.amenities ul {
+		padding-left: 0px; }
+
+	#hideOnMobile img {
+		display: none; }
+
+	#callMobile {
+		font-size: 20px;
+		background: #D84927 none repeat scroll 0% 0%;
+		padding: 10px 20px;
+		color: #FFF;
+		margin-top: 5px;
+		display: inline-block; }
+}
+
+@media (max-width: 640px) {
+	.desktopMenu {
+		display: none; }
+
+	.mobileMenu {
+		display: block; }
+
+	.navbar-default {
+		background: none repeat scroll 0% 0% transparent;
+		border: medium none;
+		text-align: center; }
+
+	.navbar-toggle {
+		margin-top: 13px;
+		margin-right: 0px;
+		margin-bottom: 13px; }
+
+	.navbar-toggle a {
+		display: block; }
+
+	.subFooter .col-md-8, .subFooter .col-md-4 {
+		float: none;
+		width: 100%; }
+
+	.hookWrap h2 {
+		font-size: 54px; }
+
+	.reviewWrap ul {
+		margin: 0px auto;
+		padding: 0px; }
+}
+
+@media (max-width: 414px) {
+	.introText p, .featProperties p {
+		padding: 30px 20px; }
+
+	.carousel-inner .col-md-3 {
+		float: none;
+		width: 100%; }
+
+	.featProperties {
+		padding-top: 20px;
+		padding-bottom: 20px; }
+
+	.commercialLease {
+    	padding: 10px 20px; }
+
+    .properties h1 {
+    	font-size: 40px;
+		padding: 0px;
+		line-height: 55px; }
+
+    .amenityHead h3 {
+    	font-size: 60px; }
+
+    .amenityHead {
+    	padding-top: 70px;
+		padding-bottom: 70px; }
+
+	.gallery .carousel-inner .col-md-4 {
+		margin-bottom: 20px; }
+}
+
+@media (max-width: 360px) {
+	.imageContainer {
+	    width: 350px;
+	    height: 225px;
+	    margin: 0px auto; }
+
+	.propertyFeatures .pdfLink {
+	    margin: 10px 5px 0px 0px;
+	    display: block; }
+}
+
+@media (max-width: 320px) {
+	.introText a {
+		padding: 10px 15px; }
+
+	.introText p, .featProperties p {
+    	padding: 30px 10px; }
+
+    .featProperties {
+    	padding-left: 10px;
+    	padding-right: 10px; }
+
+    #featured {
+		max-width: 320px;
+		width: 100%;
+		height: 230px; }
+}
